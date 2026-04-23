@@ -1,0 +1,16 @@
+AI-Ready EDA Summary
+
+Key findings:
+1. The dataset contains 583 patient records and 11 variables, including 9 numeric predictors, 1 gender field, and 1 binary target.
+2. Gender distribution is imbalanced: Male 75.64% and Female 24.36%.
+3. Target distribution is also imbalanced: Liver Disease 71.36% and No Liver Disease 28.64%.
+4. No missing values were found, so preprocessing can focus on encoding, scaling choices, and robust evaluation rather than imputation.
+5. The positive-class prevalence differs by gender: Male 73.47% versus Female 64.79%, indicating a subgroup distribution shift that must be considered during evaluation.
+6. Several laboratory features contain outliers, suggesting the need for careful inspection of scaling sensitivity and model robustness.
+7. Because the female subgroup is much smaller, subgroup metrics may exhibit higher variance and wider uncertainty than the male subgroup.
+
+Implications for Stage 3 and Stage 4:
+- Use stratified splitting on the target and track subgroup representation after the split.
+- Preserve the original gender column for subgroup evaluation even if alternate model variants exclude it as an input feature.
+- Compare global and subgroup metrics to avoid relying on aggregate performance alone.
+- Pay special attention to recall and false negative rate for the female subgroup because missed diagnoses are clinically important.

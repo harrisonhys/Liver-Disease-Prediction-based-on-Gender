@@ -1,0 +1,31 @@
+Stage 6 - Executive Summary
+
+Project title:
+Analysis of Machine Learning Model Performance Differences in Liver Disease Prediction Based on Gender
+
+Objective:
+Evaluate predictive performance and fairness behavior across gender subgroups for liver disease classification.
+
+End-to-end highlights:
+1. Dataset contains 583 samples with strong subgroup imbalance (male 75.64%, female 24.36%).
+2. Stage 2 identified subgroup distribution shift and outlier-heavy clinical features.
+3. Stage 3 applied fairness-aware preparation: 4-class stratified split, robust scaling, and clinically grounded feature engineering.
+4. Stage 4 tested three models across three experiment settings (global with/without gender, plus subgroup-specific models).
+5. Stage 5 confirmed consistent male-favored recall disparity in multiple settings.
+
+Best overall global model:
+- Experiment: exp2
+- Model: XGBoost
+- Accuracy: 0.7692
+- F1-score: 0.8402
+- ROC-AUC: 0.7782
+
+Most fairness-sensitive configuration (lowest female FNR and low recall gap):
+- Experiment: exp3
+- Model: RandomForest
+- Female FNR: 0.1111
+- Recall gap (male-female): +0.0649
+
+Executive decision:
+- Use the best global model as primary performance reference.
+- Include fairness-sensitive alternative model in discussion for healthcare deployment considerations.

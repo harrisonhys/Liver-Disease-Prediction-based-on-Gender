@@ -1,0 +1,22 @@
+AI-Ready Preprocessing Summary
+
+Actions taken:
+1. Binary target encoding: Liver Disease=1, No Liver Disease=0.
+2. Binary gender encoding: Male=1, Female=0. Original Gender column kept for subgroup evaluation.
+3. Engineered feature 'fractional_bilirubin' (DB/TB ratio) added as a clinically grounded indicator.
+4. Log1p applied to TB, DB, Alkphos, Sgpt, Sgot to compress right-skewed distributions.
+5. 4-class stratified split (Gender × Target): 466 train / 117 test.
+   - Female No-Liver-Disease samples in test set: 10 (protected by 4-class stratification).
+6. RobustScaler fitted on training set; applied to test set to prevent data leakage.
+
+Artifact locations:
+  - data/processed/train.csv          — scaled training data with all features + target + Gender
+  - data/processed/test.csv           — scaled test data
+  - data/processed/train_raw.csv      — unscaled training data (for SHAP/interpretation use)
+  - data/processed/test_raw.csv       — unscaled test data
+  - results/tables/03_selected_features.csv
+  - results/tables/03_split_balance.csv
+  - results/tables/03_subgroup_descriptive_stats.csv
+
+Ready for Stage 4 modeling.
+Key note: always use the Gender column from train/test CSVs for all subgroup splits in Stage 4.

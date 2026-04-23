@@ -1,0 +1,31 @@
+Stage 1 - Hypotheses
+
+Hypothesis 1:
+There is a measurable predictive performance difference between male and female subgroups in liver disease classification.
+
+Rationale:
+Differences in subgroup size, feature distribution, or class distribution may lead to unequal model performance.
+
+Hypothesis 2:
+Feature importance differs across gender subgroups.
+
+Rationale:
+Clinical indicators may contribute differently to liver disease prediction in male and female patients, which may be reflected in model interpretation outputs.
+
+Hypothesis 3:
+Subgroup evaluation provides more informative insight than aggregate evaluation alone.
+
+Rationale:
+Aggregate metrics can obscure disparities in recall, false negative rate, or overall classification quality for smaller or differently distributed groups.
+
+Hypothesis 4:
+At least one model will show a fairness-relevant gap in recall or false negative rate across gender.
+
+Rationale:
+In healthcare classification, missed positive cases are especially important. If one subgroup has systematically lower recall, the model may introduce practical clinical risk.
+
+Success Criteria for Later Stages:
+1. Produce overall and subgroup metrics for all candidate models.
+2. Quantify fairness-related performance gaps.
+3. Interpret whether the observed gaps are meaningful for healthcare decision support.
+4. Generate publication-ready reports, tables, and plots.

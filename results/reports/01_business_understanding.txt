@@ -1,0 +1,26 @@
+Stage 1 - Business Understanding
+
+Project Title:
+Analysis of Machine Learning Model Performance Differences in Liver Disease Prediction Based on Gender
+
+Problem Statement:
+Machine learning models for healthcare prediction are often evaluated using aggregate performance metrics. In practice, aggregate evaluation can hide subgroup-specific weaknesses. In this project, liver disease prediction performance may differ between male and female patients, and such differences may indicate fairness concerns or clinically important blind spots.
+
+Business and Research Objective:
+Develop a reproducible machine learning workflow that predicts liver disease and evaluates whether predictive performance differs across gender subgroups. The project aims to support a fairness-aware assessment of healthcare AI models and generate results suitable for academic reporting.
+
+Primary Objectives:
+1. Evaluate overall classification performance for liver disease prediction.
+2. Measure performance separately for male and female patients.
+3. Compare performance gaps between gender subgroups.
+4. Examine whether feature importance patterns differ across gender.
+5. Identify whether model behavior suggests potential fairness concerns.
+
+Analytical Scope:
+- Dataset: Indian Liver Patient Dataset (ILPD)
+- Task: Binary classification
+- Candidate models: Logistic Regression, Random Forest, XGBoost
+- Evaluation dimensions: predictive accuracy, subgroup performance, fairness gap, interpretability
+
+Expected Value:
+The study provides evidence on whether aggregate evaluation is sufficient for liver disease prediction and whether subgroup analysis adds clinically relevant insight for model assessment.

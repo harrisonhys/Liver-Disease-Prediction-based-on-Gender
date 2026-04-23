@@ -1,0 +1,25 @@
+AI-Ready Modeling Summary (Stage 4)
+
+Best model overall (Exp1, full test): XGBoost
+  Accuracy=0.7350  F1=0.8166  AUC=0.7860
+
+Recall gap (Male − Female) by model — Experiment 1:
+  Logistic Regression       gap = +0.2975  (male favored)
+  Random Forest             gap = +0.3427  (male favored)
+  XGBoost                   gap = +0.1393  (male favored)
+
+Experiment 1 vs Experiment 2 (effect of removing Gender feature):
+  Logistic Regression       female recall Exp1=0.3333  Exp2=0.3333  Δ=+0.0000
+  Random Forest             female recall Exp1=0.6111  Exp2=0.6111  Δ=+0.0000
+  XGBoost                   female recall Exp1=0.7222  Exp2=0.6667  Δ=-0.0555
+
+Experiment 3 (separate models) vs Experiment 1 — female recall improvement:
+  Logistic Regression       Exp1=0.3333  Exp3=0.2778  Δ=-0.0555  CI=[0.077,0.500]
+  Random Forest             Exp1=0.6111  Exp3=0.8889  Δ=+0.2778  CI=[0.824,1.000]
+  XGBoost                   Exp1=0.7222  Exp3=0.7778  Δ=+0.0556  CI=[0.571,0.944]
+
+Notes for Stage 5 (Evaluation):
+- All female-subgroup recall values include 95% bootstrap CI (n_female_test=28).
+- Use Δ recall (male−female) and Δ F1 as primary fairness gap metrics.
+- Compare Exp2 vs Exp1 to quantify how much Gender feature contributes to disparity.
+- Compare Exp3 vs Exp1 to assess whether gender-specific training closes the gap.

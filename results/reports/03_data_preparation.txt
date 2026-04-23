@@ -1,0 +1,39 @@
+Stage 3 - Data Preparation Steps
+
+1. Target encoding
+   - 'Liver Disease' → 1,  'No Liver Disease' → 0
+
+2. Gender encoding
+   - Male → 1,  Female → 0  (binary label encoding)
+   - Original Gender column preserved for subgroup tracking
+
+3. Feature engineering
+   - Added: fractional_bilirubin
+   - fractional_bilirubin = DB / (TB + 1e-6)  (clinically grounded DB/TB ratio)
+
+4. Log transformation (log1p)
+   - Applied to: TB, DB, Alkphos, Sgpt, Sgot
+   - Rationale: right-skewed, heavy-tailed distributions; reduces outlier influence
+
+5. Train-test split
+   - Strategy: stratified by Gender × Target (4-class key)
+   - Test size: 20%  |  Random state: 42
+   - Train: 466 rows  |  Test: 117 rows
+
+6. Feature scaling
+   - Scaler: RobustScaler (median + IQR)
+   - Rationale: resistant to extreme enzyme/bilirubin outliers
+   - Fit on training set only; applied to test set without data leakage
+
+7. Final feature list (11 features):
+   - Age
+   - TB
+   - DB
+   - Alkphos
+   - Sgpt
+   - Sgot
+   - TP
+   - ALB
+   - A/G Ratio
+   - fractional_bilirubin
+   - Gender_encoded

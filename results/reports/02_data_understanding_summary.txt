@@ -1,0 +1,41 @@
+Stage 2 - Data Understanding Summary
+
+Dataset path: /Users/macbook/Documents/PERSONAL/Data Science/Liver Disease Prediction based on Gender/datasets/liver_patient_dataset.csv
+Archived raw copy: /Users/macbook/Documents/PERSONAL/Data Science/Liver Disease Prediction based on Gender/data/raw/liver_patient_dataset.csv
+Rows: 583
+Columns: 11
+Numeric features: Age, TB, DB, Alkphos, Sgpt, Sgot, TP, ALB, A/G Ratio
+
+Class distribution:
+- Liver Disease: 416
+- No Liver Disease: 167
+
+Gender distribution:
+- Male: 441
+- Female: 142
+
+Missing-value assessment:
+- No missing values were detected in the dataset.
+
+Outlier overview:
+- TB: 84 observations (14.41%)
+- DB: 81 observations (13.89%)
+- Sgpt: 73 observations (12.52%)
+- Alkphos: 69 observations (11.84%)
+- Sgot: 66 observations (11.32%)
+- A/G Ratio: 10 observations (1.72%)
+- TP: 8 observations (1.37%)
+
+Strongest numeric correlations:
+- TB vs DB: 0.875
+- DB vs TB: 0.875
+- Sgpt vs Sgot: 0.792
+- Sgot vs Sgpt: 0.792
+- ALB vs TP: 0.784
+
+Potential bias sources:
+- The dataset is gender-imbalanced, with substantially more male than female patients.
+- The target is class-imbalanced toward the Liver Disease class.
+- Positive-class rate gap across gender groups: 8.68 percentage points.
+- A smaller female subgroup may yield less stable estimates during model evaluation.
+- Outliers in enzyme and bilirubin features may disproportionately affect model fitting and interpretation.

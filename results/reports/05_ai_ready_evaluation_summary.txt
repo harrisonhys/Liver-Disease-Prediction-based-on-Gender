@@ -1,0 +1,25 @@
+AI-Ready Evaluation Summary (Stage 5)
+
+Core findings:
+1. Best overall global setup is exp2 / XGBoost (Full Accuracy=0.7692, Full F1=0.8402, Full AUC=0.7782).
+2. Gender disparity exists across multiple models, with male recall generally higher than female recall.
+3. In Experiment 1, the smallest recall disparity is from XGBoost (RecallGap male-female=+0.1393).
+4. False Negative Rate (FNR) is higher in female subgroup for several model settings, signaling potential under-diagnosis risk.
+5. Removing explicit gender feature (Exp2) does not fully remove subgroup disparity, indicating distributional differences in clinical features.
+6. Separate subgroup models (Exp3) can reduce female FNR for some algorithms, but this effect is model-dependent.
+
+Fairness metrics tracked:
+- Accuracy Gap (male - female)
+- F1 Gap (male - female)
+- Recall Gap (male - female)
+- Female and Male FNR, plus FNR Gap (female - male)
+
+Recommended direction for Stage 6 packaging:
+- Use the best global model as primary deployment reference.
+- Include fairness-risk model comparison using RecallGap and FNRGap as key evidence.
+- Highlight clinical consequence of female false negatives in the discussion section.
+
+Experiment snapshots:
+- exp1: lowest female FNR = 0.2778 by XGBoost (RecallGap=+0.1393).
+- exp2: lowest female FNR = 0.3333 by XGBoost (RecallGap=+0.2410).
+- exp3: lowest female FNR = 0.1111 by RandomForest (RecallGap=+0.0649).

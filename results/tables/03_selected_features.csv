@@ -1,0 +1,12 @@
+feature,type
+Age,numeric
+TB,numeric
+DB,numeric
+Alkphos,numeric
+Sgpt,numeric
+Sgot,numeric
+TP,numeric
+ALB,numeric
+A/G Ratio,numeric
+fractional_bilirubin,engineered
+Gender_encoded,categorical_binary

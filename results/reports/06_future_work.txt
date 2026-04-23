@@ -1,0 +1,21 @@
+Stage 6 - Future Work
+
+1) Data expansion
+- Increase sample size with more balanced female representation.
+- Collect multi-center and multi-hospital data to reduce sampling bias.
+
+2) External validation
+- Validate trained models on datasets from other regions and demographics.
+- Compare calibration and recall stability across populations.
+
+3) Fairness-aware modeling
+- Evaluate threshold-optimization per subgroup to reduce recall/FNR gap.
+- Test fairness-constrained objectives and post-processing approaches.
+
+4) Clinical utility enhancement
+- Incorporate decision-curve analysis and cost-sensitive evaluation aligned with clinical priorities.
+- Quantify acceptable false-positive tradeoff for reducing false negatives in female patients.
+
+5) Uncertainty reporting
+- Extend bootstrap confidence intervals to all key subgroup metrics.
+- Report interval overlap and stability under repeated split/seed sensitivity checks.

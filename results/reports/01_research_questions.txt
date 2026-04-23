@@ -1,0 +1,18 @@
+Stage 1 - Research Questions
+
+Main Research Question:
+Do machine learning models for liver disease prediction perform differently across gender subgroups?
+
+Detailed Research Questions:
+1. Do Logistic Regression, Random Forest, and XGBoost produce different predictive performance for male and female patients?
+2. Which model achieves the strongest overall and subgroup-specific performance?
+3. Are the most influential predictive features consistent across male and female patient groups?
+4. Does subgroup evaluation reveal fairness issues that are not visible in aggregate metrics?
+5. Are false negative rates or recall values materially worse for one gender subgroup, creating a possible healthcare risk?
+
+Operational Questions for the Analysis:
+1. What is the gender distribution in the dataset?
+2. Is the target distribution balanced overall and within each gender subgroup?
+3. How large are the performance gaps across gender for each modeling scenario?
+4. Does removing the gender feature reduce or increase subgroup disparity?
+5. Do separate gender-specific models behave differently from a single global model?

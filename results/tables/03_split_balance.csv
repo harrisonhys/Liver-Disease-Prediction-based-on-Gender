@@ -1,0 +1,9 @@
+split,Gender,target_label,count,pct_of_split
+train,Female,No Liver Disease,40,8.58
+train,Female,Liver Disease,74,15.88
+train,Male,No Liver Disease,93,19.96
+train,Male,Liver Disease,259,55.58
+test,Female,No Liver Disease,10,8.55
+test,Female,Liver Disease,18,15.38
+test,Male,No Liver Disease,24,20.51
+test,Male,Liver Disease,65,55.56

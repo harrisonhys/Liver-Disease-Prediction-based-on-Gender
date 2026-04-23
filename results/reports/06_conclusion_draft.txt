@@ -1,0 +1,23 @@
+Stage 6 - Conclusion Draft
+
+This study investigated whether machine learning models for liver disease prediction behave differently across gender subgroups.
+Results from Stage 5 demonstrate that subgroup disparity is non-negligible and clinically relevant.
+
+Main conclusions:
+1. The highest global predictive performance was achieved by exp2 / XGBoost (F1=0.8402, Accuracy=0.7692, AUC=0.7782).
+2. Across multiple settings, male recall remained higher than female recall, indicating potential fairness risk.
+3. In global-with-gender modeling (exp1), the smallest recall disparity was from XGBoost (RecallGap=+0.1393).
+4. Female false negative rate (FNR) varied substantially by model configuration, which has direct clinical implications for missed diagnosis risk.
+5. Removing explicit gender input did not eliminate disparity, suggesting subgroup differences are embedded in other clinical features.
+
+Fairness discussion:
+- In healthcare, recall and FNR are critical because false negatives can delay treatment.
+- The observed recall/FNR gaps suggest aggregate metrics alone are insufficient for safe model assessment.
+- Subgroup-specific reporting must be treated as mandatory in medical AI validation.
+
+Limitations:
+- Small dataset size may limit estimate stability.
+- Gender imbalance reduces robustness of female subgroup estimates.
+- Dataset is region-specific (India), limiting cross-region external validity.
+
+Overall, the results support the hypothesis that subgroup-aware evaluation provides materially better insight than aggregate-only evaluation.

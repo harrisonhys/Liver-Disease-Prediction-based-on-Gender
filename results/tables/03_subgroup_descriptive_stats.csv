@@ -1,0 +1,41 @@
+feature,subgroup,count,mean,std,min,25%,50%,75%,max
+Age,Male — Liver Disease,324.0,46.951,15.655,12.0,34.0,47.0,60.0,90.0
+TB,Male — Liver Disease,324.0,1.257,0.82,0.336,0.588,0.993,1.609,4.331
+DB,Male — Liver Disease,324.0,0.791,0.729,0.095,0.182,0.559,1.131,3.03
+Alkphos,Male — Liver Disease,324.0,5.569,0.525,4.331,5.252,5.449,5.756,7.655
+Sgpt,Male — Liver Disease,324.0,4.018,0.947,2.565,3.367,3.818,4.406,7.601
+Sgot,Male — Liver Disease,324.0,4.263,1.035,2.485,3.497,4.043,4.838,8.503
+TP,Male — Liver Disease,324.0,6.393,1.071,2.7,5.675,6.4,7.1,9.6
+ALB,Male — Liver Disease,324.0,3.012,0.765,0.9,2.5,3.0,3.6,5.5
+A/G Ratio,Male — Liver Disease,324.0,0.913,0.336,0.3,0.7,0.9,1.1,2.8
+fractional_bilirubin,Male — Liver Disease,324.0,0.412,0.374,0.048,0.258,0.426,0.485,5.0
+Age,Male — No Liver Disease,117.0,40.598,17.066,4.0,27.0,40.0,56.0,72.0
+TB,Male — No Liver Disease,117.0,0.737,0.329,0.405,0.531,0.588,0.833,2.116
+DB,Male — No Liver Disease,117.0,0.323,0.281,0.095,0.182,0.182,0.405,1.526
+Alkphos,Male — No Liver Disease,117.0,5.323,0.398,4.615,5.1,5.226,5.38,7.366
+Sgpt,Male — No Liver Disease,117.0,3.436,0.525,2.398,3.091,3.367,3.761,5.204
+Sgot,Male — No Liver Disease,117.0,3.587,0.615,2.565,3.135,3.434,3.871,5.656
+TP,Male — No Liver Disease,117.0,6.527,1.045,3.7,5.9,6.5,7.3,8.5
+ALB,Male — No Liver Disease,117.0,3.342,0.775,1.4,2.9,3.5,4.0,5.0
+A/G Ratio,Male — No Liver Disease,117.0,1.038,0.289,0.37,0.9,1.0,1.2,1.9
+fractional_bilirubin,Male — No Liver Disease,117.0,0.309,0.103,0.111,0.25,0.286,0.333,0.571
+Age,Female — Liver Disease,92.0,43.348,15.409,7.0,32.0,45.0,53.0,75.0
+TB,Female — Liver Disease,92.0,0.973,0.752,0.405,0.588,0.642,1.011,3.357
+DB,Female — Liver Disease,92.0,0.536,0.669,0.095,0.182,0.182,0.614,2.625
+Alkphos,Female — Liver Disease,92.0,5.6,0.662,4.159,5.185,5.321,5.784,7.548
+Sgpt,Female — Liver Disease,92.0,3.677,0.889,2.565,3.091,3.332,4.115,6.673
+Sgot,Female — Liver Disease,92.0,3.843,1.005,2.485,3.091,3.526,4.413,6.957
+TP,Female — Liver Disease,92.0,6.693,1.149,3.6,6.0,6.8,7.525,8.9
+ALB,Female — Liver Disease,92.0,3.232,0.839,1.0,2.8,3.3,3.9,5.5
+A/G Ratio,Female — Liver Disease,92.0,0.918,0.286,0.3,0.788,0.9,1.005,1.8
+fractional_bilirubin,Female — Liver Disease,92.0,0.333,0.166,0.125,0.25,0.286,0.45,1.4
+Age,Female — No Liver Disease,50.0,42.74,16.917,17.0,29.25,39.5,52.75,85.0
+TB,Female — No Liver Disease,50.0,0.625,0.188,0.405,0.531,0.588,0.642,1.281
+DB,Female — No Liver Disease,50.0,0.224,0.156,0.095,0.182,0.182,0.182,0.788
+Alkphos,Female — No Liver Disease,50.0,5.263,0.318,4.511,5.07,5.242,5.332,6.234
+Sgpt,Female — No Liver Disease,50.0,3.26,0.532,2.398,2.944,3.219,3.497,5.081
+Sgot,Female — No Liver Disease,50.0,3.355,0.513,2.398,3.091,3.332,3.611,4.691
+TP,Female — No Liver Disease,50.0,6.58,1.115,4.5,5.65,6.75,7.275,9.2
+ALB,Female — No Liver Disease,50.0,3.35,0.811,1.4,2.9,3.25,3.975,4.9
+A/G Ratio,Female — No Liver Disease,50.0,1.006,0.28,0.45,0.9,0.965,1.145,1.8
+fractional_bilirubin,Female — No Liver Disease,50.0,0.268,0.084,0.143,0.222,0.261,0.296,0.5

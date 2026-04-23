@@ -1,0 +1,48 @@
+Stage 5 - Evaluation Comparative Analysis
+
+1) Overall model comparison (global experiments)
+- Best global configuration by Full F1: exp2 / XGBoost (F1=0.8402, Accuracy=0.7692, AUC=0.7782).
+- In Experiment 1, smallest recall gap is from XGBoost (male-female recall gap=+0.1393).
+
+2) Gender performance disparity and fairness metrics
+- exp1 / LogisticRegression: AccGap(male-female)=+0.1365, F1Gap(male-female)=+0.2593, RecallGap(male-female)=+0.2975, FNR female=0.6667, FNR male=0.3692, FNRGap(female-male)=+0.2975.
+- exp1 / RandomForest: AccGap(male-female)=+0.2396, F1Gap(male-female)=+0.2325, RecallGap(male-female)=+0.3427, FNR female=0.3889, FNR male=0.0462, FNRGap(female-male)=+0.3427.
+- exp1 / XGBoost: AccGap(male-female)=+0.0742, F1Gap(male-female)=+0.0929, RecallGap(male-female)=+0.1393, FNR female=0.2778, FNR male=0.1385, FNRGap(female-male)=+0.1393.
+- exp2 / LogisticRegression: AccGap(male-female)=+0.1365, F1Gap(male-female)=+0.2593, RecallGap(male-female)=+0.2975, FNR female=0.6667, FNR male=0.3692, FNRGap(female-male)=+0.2975.
+- exp2 / RandomForest: AccGap(male-female)=+0.2396, F1Gap(male-female)=+0.2325, RecallGap(male-female)=+0.3427, FNR female=0.3889, FNR male=0.0462, FNRGap(female-male)=+0.3427.
+- exp2 / XGBoost: AccGap(male-female)=+0.1192, F1Gap(male-female)=+0.1403, RecallGap(male-female)=+0.2410, FNR female=0.3333, FNR male=0.0923, FNRGap(female-male)=+0.2410.
+- exp3 / LogisticRegression: AccGap(male-female)=+0.2079, F1Gap(male-female)=+0.3469, RecallGap(male-female)=+0.3684, FNR female=0.7222, FNR male=0.3538, FNRGap(female-male)=+0.3684.
+- exp3 / RandomForest: AccGap(male-female)=+0.0253, F1Gap(male-female)=+0.0406, RecallGap(male-female)=+0.0649, FNR female=0.1111, FNR male=0.0462, FNRGap(female-male)=+0.0649.
+- exp3 / XGBoost: AccGap(male-female)=+0.0517, F1Gap(male-female)=+0.0742, RecallGap(male-female)=+0.1299, FNR female=0.2222, FNR male=0.0923, FNRGap(female-male)=+0.1299.
+
+3) False positives vs false negatives
+- exp1 / LogisticRegression / female: TP=6, TN=10, FP=0, FN=12, FPR=0.0000, FNR=0.6667.
+- exp1 / LogisticRegression / full: TP=47, TN=32, FP=2, FN=36, FPR=0.0588, FNR=0.4337.
+- exp1 / LogisticRegression / male: TP=41, TN=22, FP=2, FN=24, FPR=0.0833, FNR=0.3692.
+- exp1 / RandomForest / female: TP=11, TN=4, FP=6, FN=7, FPR=0.6000, FNR=0.3889.
+- exp1 / RandomForest / full: TP=73, TN=11, FP=23, FN=10, FPR=0.6765, FNR=0.1205.
+- exp1 / RandomForest / male: TP=62, TN=7, FP=17, FN=3, FPR=0.7083, FNR=0.0462.
+- exp1 / XGBoost / female: TP=13, TN=6, FP=4, FN=5, FPR=0.4000, FNR=0.2778.
+- exp1 / XGBoost / full: TP=69, TN=17, FP=17, FN=14, FPR=0.5000, FNR=0.1687.
+- exp1 / XGBoost / male: TP=56, TN=11, FP=13, FN=9, FPR=0.5417, FNR=0.1385.
+- exp2 / LogisticRegression / female: TP=6, TN=10, FP=0, FN=12, FPR=0.0000, FNR=0.6667.
+- exp2 / LogisticRegression / full: TP=47, TN=32, FP=2, FN=36, FPR=0.0588, FNR=0.4337.
+- exp2 / LogisticRegression / male: TP=41, TN=22, FP=2, FN=24, FPR=0.0833, FNR=0.3692.
+- exp2 / RandomForest / female: TP=11, TN=4, FP=6, FN=7, FPR=0.6000, FNR=0.3889.
+- exp2 / RandomForest / full: TP=73, TN=11, FP=23, FN=10, FPR=0.6765, FNR=0.1205.
+- exp2 / RandomForest / male: TP=62, TN=7, FP=17, FN=3, FPR=0.7083, FNR=0.0462.
+- exp2 / XGBoost / female: TP=12, TN=7, FP=3, FN=6, FPR=0.3000, FNR=0.3333.
+- exp2 / XGBoost / full: TP=71, TN=19, FP=15, FN=12, FPR=0.4412, FNR=0.1446.
+- exp2 / XGBoost / male: TP=59, TN=12, FP=12, FN=6, FPR=0.5000, FNR=0.0923.
+- exp3_female / LogisticRegression / female: TP=5, TN=9, FP=1, FN=13, FPR=0.1000, FNR=0.7222.
+- exp3_female / RandomForest / female: TP=16, TN=5, FP=5, FN=2, FPR=0.5000, FNR=0.1111.
+- exp3_female / XGBoost / female: TP=14, TN=5, FP=5, FN=4, FPR=0.5000, FNR=0.2222.
+- exp3_male / LogisticRegression / male: TP=42, TN=21, FP=3, FN=23, FPR=0.1250, FNR=0.3538.
+- exp3_male / RandomForest / male: TP=62, TN=7, FP=17, FN=3, FPR=0.7083, FNR=0.0462.
+- exp3_male / XGBoost / male: TP=59, TN=6, FP=18, FN=6, FPR=0.7500, FNR=0.0923.
+
+4) Clinical implications
+- In healthcare screening, false negatives are more critical than false positives because missed liver disease cases can delay treatment.
+- Highest female FNR is 0.7222 (exp3 / LogisticRegression); this indicates the highest under-diagnosis risk for female patients.
+- Lowest female FNR is 0.1111 (exp3 / RandomForest); this configuration minimizes missed female liver disease cases.
+- Any model with large positive RecallGap(male-female) and large positive FNRGap(female-male) should be flagged as fairness risk.

@@ -1,0 +1,84 @@
+99 - Master Research Summary
+
+CRISP-DM execution summary:
+- Stage 1: Business understanding completed with formal problem framing, research questions, and hypotheses.
+- Stage 2: Data understanding completed with EDA reports, data profile tables, and visualization artifacts.
+- Stage 3: Data preparation completed with robust preprocessing and subgroup-aware split strategy.
+- Stage 4: Modeling completed with three algorithms across three experiment scenarios.
+- Stage 5: Evaluation completed with fairness gap analysis and clinical error interpretation.
+- Stage 6: Research packaging completed with executive summary, conclusion, and future-work agenda.
+
+Best model recommendation:
+- exp2 / XGBoost (F1=0.8402, Accuracy=0.7692, AUC=0.7782).
+
+Fairness conclusion (critical insight):
+- Male-favored recall is consistently observed across major configurations.
+- Female false-negative risk is configuration-sensitive and must be explicitly monitored.
+- Subgroup-aware evaluation is necessary for healthcare-grade model validation.
+
+Generated plots list:
+- 02_correlation_heatmap.png
+- 02_feature_distributions.png
+- 02_gender_distribution.png
+- 02_lab_boxplots_by_gender.png
+- 02_lab_boxplots_by_target.png
+- 02_missing_values.png
+- 02_target_by_gender.png
+- 02_target_distribution.png
+- 04_exp1_lo_cm.png
+- 04_exp1_lo_importance.png
+- 04_exp1_lo_shap.png
+- 04_exp1_pr.png
+- 04_exp1_ra_cm.png
+- 04_exp1_ra_importance.png
+- 04_exp1_ra_shap.png
+- 04_exp1_roc.png
+- 04_exp1_xg_cm.png
+- 04_exp1_xg_importance.png
+- 04_exp1_xg_shap.png
+- 04_exp2_lo_cm.png
+- 04_exp2_lo_importance.png
+- 04_exp2_pr.png
+- 04_exp2_ra_cm.png
+- 04_exp2_ra_importance.png
+- 04_exp2_roc.png
+- 04_exp2_xg_cm.png
+- 04_exp2_xg_importance.png
+- 04_exp3_female_lo_cm.png
+- 04_exp3_female_lo_importance.png
+- 04_exp3_female_lo_shap.png
+- 04_exp3_female_ra_cm.png
+- 04_exp3_female_ra_importance.png
+- 04_exp3_female_ra_shap.png
+- 04_exp3_female_roc_pr.png
+- 04_exp3_female_xg_cm.png
+- 04_exp3_female_xg_importance.png
+- 04_exp3_female_xg_shap.png
+- 04_exp3_male_lo_cm.png
+- 04_exp3_male_lo_importance.png
+- 04_exp3_male_lo_shap.png
+- 04_exp3_male_ra_cm.png
+- 04_exp3_male_ra_importance.png
+- 04_exp3_male_ra_shap.png
+- 04_exp3_male_roc_pr.png
+- 04_exp3_male_xg_cm.png
+- 04_exp3_male_xg_importance.png
+- 04_exp3_male_xg_shap.png
+
+Generated reports list:
+- 01_business_understanding.txt
+- 01_hypotheses.txt
+- 01_research_questions.txt
+- 02_ai_ready_eda_summary.txt
+- 02_data_understanding_summary.txt
+- 03_ai_ready_preprocessing_summary.txt
+- 03_data_preparation.txt
+- 04_ai_ready_modeling_summary.txt
+- 04_modeling_exp1.txt
+- 04_modeling_exp2.txt
+- 04_modeling_exp3.txt
+- 05_ai_ready_evaluation_summary.txt
+- 05_evaluation_comparative_analysis.txt
+- 06_conclusion_draft.txt
+- 06_executive_summary.txt
+- 06_future_work.txt
