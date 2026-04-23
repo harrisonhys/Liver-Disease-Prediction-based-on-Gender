@@ -1,8 +1,8 @@
 # Analisis Perbedaan Prediksi Penyakit Liver Berdasarkan Gender Menggunakan Machine Learning
 
-**Penulis:** [Nama Penulis]  
-**Afiliasi:** [Institusi]  
-**Email:** [email@domain.com]  
+**Penulis:** Harianto 
+**Afiliasi:** Nusa cendekia research
+**Email:** [masharry.net@gmail.com]  
 **Tanggal Naskah:** April 2026
 
 ---
